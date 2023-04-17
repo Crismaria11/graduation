@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
 /**************************/
 /*     General Styles     */
 /**************************/
@@ -9,17 +11,17 @@ html {
 
 body, p {
 	color: #555555; 
-	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+	font: 400 1rem/1.625rem serif;
 }
 
 h1 {
 	color: #333333;
-	font: italic 700 2.75rem/3.25rem "Sansita", sans-serif;
+	font: italic 700 2.75rem/3.25rem 'Rochester', cursive;
 }
 
 h2 {
 	color: #333333;
-	font: italic 700 2.25rem/2.75rem "Sansita", sans-serif;
+	font: italic 700 2.25rem/2.75rem 'Rochester', cursive;;
 }
 
 h3 {
@@ -51,6 +53,7 @@ h6 {
 	font-size: 0.875rem;
 	line-height: 1.5rem;
 }
+
 
 .testimonial-text {
 	font-style: italic;
@@ -85,7 +88,7 @@ a:hover {
 }
 
 .red {
-	color: #ec3258;
+	color: #cdb08e;
 }
 
 .bg-gray {
@@ -95,9 +98,9 @@ a:hover {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #ec3258;
+	border: 1px solid #cdb08e;
 	border-radius: 32px;
-	background-color: #ec3258;
+	background-color: #cdb08e;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -108,16 +111,16 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #ec3258; /* needs to stay here because of the color property of a tag */
+	color: #cdb08e;
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.75rem 1.625rem 2.75rem;
-	border: 1px solid #ec3258;
+	border: 1px solid #cdb08e;
 	border-radius: 32px;
-	background-color: #ec3258;
+	background-color: #cdb08e;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -128,7 +131,7 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #ec3258; /* needs to stay here because of the color property of a tag */
+	color: #cdb08e;
 	text-decoration: none;
 }
 
@@ -222,7 +225,7 @@ a:hover {
 
 .form-control-input,
 .form-control-select {
-	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	display: block;
 	width: 100%;
 	padding-top: 1.125rem;
 	padding-bottom: 0.125rem;
@@ -234,7 +237,7 @@ a:hover {
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	-webkit-appearance: none;
 }
 
 .form-control-select {
@@ -245,7 +248,6 @@ a:hover {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
     -webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -258,9 +260,9 @@ select {
 }
 
 .form-control-textarea {
-	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	display: block;
 	width: 100%;
-	height: 11rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 11rem;
 	padding-top: 1.5rem;
 	padding-left: 1.3125rem;
 	border: 1px solid #d0d5e2;
@@ -275,7 +277,7 @@ select {
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
-	outline: none; /* Removes blue border on focus */
+	outline: none;
 }
 
 .form-control-input:hover,
@@ -298,9 +300,9 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #ec3258;
+	border: 1px solid #cdb08e;
 	border-radius: 32px;
-	background-color: #ec3258;
+	background-color: #cdb08e;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -311,7 +313,7 @@ input[type='checkbox'] {
 
 .form-control-submit-button:hover {
 	background-color: transparent;
-	color: #ec3258;
+	color: #cdb08e;
 }
 
 /* Fade-move Animation For Details Lightbox - Magnific Popup */
@@ -409,11 +411,11 @@ input[type='checkbox'] {
 /*     Navigation     */
 /**********************/
 .navbar {
-	background-color: #ec3258;
+	background-color: #cdb08e;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
-	border-bottom: 1px solid #f06b7f;
+	border-bottom: 1px solid #cdb08e;
 }
 
 .navbar .container {
@@ -440,7 +442,7 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 3.25rem;
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -448,7 +450,7 @@ input[type='checkbox'] {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #ec3258;
+	background-color: #cdb08e;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -468,7 +470,7 @@ input[type='checkbox'] {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #f8e7eb;
+	color: #000;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -476,12 +478,11 @@ input[type='checkbox'] {
 .navbar .nav-item.dropdown.show .nav-link,
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
-	color: #ffffff;
+	color: #fff;
 }
 
-/* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
-	animation: fadeDropdown 0.2s; /* required for the fade animation */
+	animation: fadeDropdown 0.2s;
 }
 
 @keyframes fadeDropdown {
@@ -498,7 +499,7 @@ input[type='checkbox'] {
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 	border: none;
-	background-color: #ec3258;
+	background-color: #cdb08e;
 }
 
 .navbar .dropdown-item {
@@ -512,8 +513,8 @@ input[type='checkbox'] {
 }
 
 .navbar .dropdown-item:hover {
-	background-color: #ec3258;
-	color: #ffffff;
+	background-color: #cdb08e;
+	color: #000;
 }
 
 .navbar .dropdown-divider {
@@ -521,9 +522,8 @@ input[type='checkbox'] {
 	height: 1px;
 	margin: 0.5rem auto 0.5rem auto;
 	border: none;
-	background-color: #e7b4be;
+	background-color: #cdb08e;
 }
-/* end of dropdown menu */
 
 .navbar .fa-stack {
 	width: 2em;
@@ -532,21 +532,21 @@ input[type='checkbox'] {
 }
 
 .navbar .fa-stack-2x {
-	color: #ffffff;
+	color: #000;
 	transition: all 0.2s ease;
 }
 
 .navbar .fa-stack-1x {
-	color: #ec3258;
+	color: #cdb08e;
 	transition: all 0.2s ease;
 }
 
 .navbar .fa-stack:hover .fa-stack-2x {
-	color: #ec3258;
+	color: #cdb08e;
 }
 
 .navbar .fa-stack:hover .fa-stack-1x {
-	color: #ffffff;
+	color: #000;
 }
 
 .navbar .navbar-toggler {
@@ -562,15 +562,16 @@ input[type='checkbox'] {
 .header {
 	position: relative;
 	padding-top: 7rem;
-	padding-bottom: 9rem;
-	background: linear-gradient(to bottom right, rgba(236, 50, 88, 0.9), rgba(239, 100, 57, 0.9)), url("../images/hback.jpg") center center no-repeat;
+	/* padding-bottom: 9rem; */
+	padding-bottom: 15rem;
+	background: linear-gradient(to bottom right, #c0906e5f, #cdb08e79), url("../images/foto-invitacion.jpg") center center no-repeat;;
 	background-size: cover;
 	text-align: center;
 }
 
 .header .countdown {
 	margin-bottom: 0.5rem;
-	color: #ffffff;
+	color: #000;
 }
 
 .header .countdown #clock .counter-number {
@@ -581,7 +582,7 @@ input[type='checkbox'] {
 	margin-bottom: 1.25rem;
 	margin-left: 0.5rem;
 	padding-top: 2.5rem;
-	border: 2px solid #ffffff;
+	border: 2px solid #000;
 	border-radius: 50%;
 	font-weight: 400;
 	font-size: 2.25rem;
@@ -598,12 +599,12 @@ input[type='checkbox'] {
 
 .header .h1-large {
 	margin-bottom: 1.125rem;
-	color: #ffffff;
+	color: #000;
 }
 
 .header .p-large {
 	margin-bottom: 2.125rem;
-	color: #ffffff;
+	color: #000;
 }
 
 .header .btn-outline-lg {
@@ -622,6 +623,41 @@ input[type='checkbox'] {
 	left: 0;
 	width: 100%;
 	height: 50px;
+}
+
+
+.header2 {
+	/* background-color: #333333; */
+	text-align: center;
+}
+
+
+.headerC .countdown {
+	margin-bottom: 0.5rem;
+	color: #000;
+}
+
+.headerC .countdown #clock .counter-number {
+	display: inline-block;
+	width: 7.25rem;
+	height: 7.25rem;
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+	margin-left: 0.5rem;
+	padding-top: 2.5rem;
+	border: 2px solid #000;
+	border-radius: 50%;
+	font-weight: 400;
+	font-size: 2.25rem;
+	line-height: 1.25rem;
+	text-align: center;
+}
+
+.headerC .countdown #clock .counter-number .timer-text {
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-align: center;
 }
 
 
@@ -651,46 +687,6 @@ input[type='checkbox'] {
 }
 
 
-/***********************/
-/*     Description     */
-/***********************/
-/* .slider-1 {
-	padding-top: 8.375rem;
-	padding-bottom: 3.25rem;
-}
-
-.slider-1 .slider-container {
-	position: relative;
-	margin-bottom: 3rem;
-}
-
-.slider-1 .swiper-container {
-	position: static;
-	width: 90%;
-	border-radius: 6px;
-}
-
-.slider-1 .swiper-button-prev:focus,
-.slider-1 .swiper-button-next:focus {
-	outline: none;
-}
-
-.slider-1 .swiper-button-prev {
-	left: -14px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23333'%2F%3E%3C%2Fsvg%3E");
-	background-size: 18px 28px;
-}
-
-.slider-1 .swiper-button-next {
-	right: -14px;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23333'%2F%3E%3C%2Fsvg%3E");
-	background-size: 18px 28px;
-}
-
-.slider-1 h2 {
-	margin-bottom: 1.25rem;
-} */
-
 
 
 /******************/
@@ -713,7 +709,7 @@ input[type='checkbox'] {
 .footer {
 	padding-top: 4rem;
 	padding-bottom: 1.5rem;
-	background-color: #ec3258;
+	background-color: #cdb08e;
 }
 
 .footer a {
@@ -752,12 +748,12 @@ input[type='checkbox'] {
 }
 
 .footer .footer-col.third .fa-stack .fa-stack-1x {
-    color: #ec3258;
+    color: #cdb08e;
 	transition: all 0.2s ease;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-2x {
-    color: #ec3258;
+    color: #cdb08e;
 }
 
 .footer .footer-col.third .fa-stack:hover .fa-stack-1x {
@@ -770,7 +766,7 @@ input[type='checkbox'] {
 /*********************/
 .copyright {
 	padding-bottom: 1rem;
-	background-color: #ec3258;
+	background-color: #cdb08e;
 	text-align: center;
 }
 
@@ -907,8 +903,8 @@ a:hover.back-to-top {
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: #ec3258;
-		border-bottom: 1px solid #f06b7f;
+		background-color: #cdb08e;
+		border-bottom: 1px solid #cdb08e;
 	}
 
 	.offcanvas-collapse {
@@ -1117,8 +1113,8 @@ a:hover.back-to-top {
 .btn {
 	width: 160px;
 	height: 50px;
-	background: linear-gradient(to top, #89122a, #b71f3d, #ec3258);
-	color: #fff;
+	background: linear-gradient(to top, #a48c70, #cdb08e, #ebcaa4);
+	color: #000;
 	border-radius: 10px;
 	border: none;
 	outline: none;
@@ -1359,7 +1355,7 @@ a:hover.back-to-top {
 	transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 	height: 100%;
 	width: 100%;
-	background-color: rgb(218, 57, 143);
+	background-color: #cdb08e;
 	filter: blur(2em);
 	opacity: 0;
 	pointer-events: none;
@@ -1406,8 +1402,8 @@ a:hover.back-to-top {
   
   @keyframes lightBox {
 	0% {
-	  border: 1px solid rgb(218, 57, 143);
-	  box-shadow: 0 0 5px 0px rgb(169, 44, 110), inset 0 0 10px rgb(169, 44, 110);
+	  border: 1px solid #cdb08e;
+	  box-shadow: 0 0 5px 0px #b09779, inset 0 0 10px #e6c5a0;
 	}
   
 	20% {
@@ -1416,8 +1412,8 @@ a:hover.back-to-top {
 	}
   
 	30% {
-	  border: 1px solid rgb(218, 57, 143);
-	  box-shadow: 0 0 10px 0px rgb(169, 44, 110), inset 0 0 15px rgb(169, 44, 110);
+	  border: 1px solid #cdb08e;
+	  box-shadow: 0 0 10px 0px #b09779, inset 0 0 15px #e6c5a0;
 	}
   
 	38% {
@@ -1426,8 +1422,8 @@ a:hover.back-to-top {
 	}
   
 	45% {
-	  border: 1px solid rgb(218, 57, 143);
-	  box-shadow: 0 0 15px 0px rgb(169, 44, 110), inset 0 0 20px rgb(169, 44, 110);
+	  border: 1px solid #cdb08e;
+	  box-shadow: 0 0 15px 0px #b09779, inset 0 0 20px #e6c5a0;
 	}
   
 	50% {
@@ -1436,8 +1432,8 @@ a:hover.back-to-top {
 	}
   
 	53% {
-	  border: 1px solid rgb(218, 57, 143);
-	  box-shadow: 0 0 15px 0px rgb(169, 44, 110), inset 0 0 25px rgb(169, 44, 110);
+	  border: 1px solid #cdb08e;
+	  box-shadow: 0 0 15px 0px #b09779, inset 0 0 25px #e6c5a0;
 	}
   
 	65% {
@@ -1446,8 +1442,8 @@ a:hover.back-to-top {
 	}
   
 	100% {
-	  border: 1px solid rgb(218, 57, 143);
-	  box-shadow: 0 0 15px 0px rgb(169, 44, 110), inset 0 0 25px rgb(169, 44, 110);
+	  border: 1px solid #cdb08e;
+	  box-shadow: 0 0 15px 0px #b09779, inset 0 0 25px #e6c5a0;
 	}
   }
   
@@ -1491,8 +1487,8 @@ a:hover.back-to-top {
   
   @keyframes lightText {
 	0% {
-	  color: rgb(218, 57, 143);
-	  text-shadow: 0 0 5px rgb(169, 44, 110);
+	  color: #a78f74;
+	  text-shadow: 0 0 5px #cdb08e;
 	}
   
 	20% {
@@ -1501,8 +1497,8 @@ a:hover.back-to-top {
 	}
   
 	30% {
-	  color: rgb(218, 57, 143);
-	  text-shadow: 0 0 10px rgb(169, 44, 110);
+	  color: #cdb08e;
+	  text-shadow: 0 0 10px #cdb08e;
 	}
   
 	38% {
@@ -1511,8 +1507,8 @@ a:hover.back-to-top {
 	}
   
 	45% {
-	  color: rgb(218, 57, 143);
-	  text-shadow: 0 0 15px rgb(169, 44, 110);
+	  color: #cdb08e;
+	  text-shadow: 0 0 15px #cdb08e;
 	}
   
 	50% {
@@ -1521,8 +1517,8 @@ a:hover.back-to-top {
 	}
   
 	53% {
-	  color: rgb(218, 57, 143);
-	  text-shadow: 0 0 15px rgb(169, 44, 110);
+	  color: #cdb08e;
+	  text-shadow: 0 0 15px #cdb08e;
 	}
   
 	65% {
@@ -1531,8 +1527,8 @@ a:hover.back-to-top {
 	}
   
 	100% {
-	  color: rgb(218, 57, 143);
-	  text-shadow: 0 0 15px rgb(169, 44, 110);
+	  color: #605141;
+	  text-shadow: 0 0 15px #cdb08e;
 	}
   }
 
@@ -1543,8 +1539,8 @@ a:hover.back-to-top {
 
 .confAsistencia {
 	background: transparent;
-	color: #fff;
-	border: 3px solid #fff;
+	color: #000;
+	border: 3px solid #000;
 	border-radius: 50px;
 	padding: 0.8rem 2rem;
 	font: 18px "Margarine", sans-serif;
@@ -1553,7 +1549,11 @@ a:hover.back-to-top {
 	position: relative;
 	transition: 0.2s ease-in-out;
 	letter-spacing: 2px;
-  }
+}
+
+.divAsis a{
+	color: #000;
+}
   
   /* .name {
 	width: 100%;
@@ -1637,15 +1637,24 @@ a:hover.back-to-top {
 	}
   
 	40%, 60% {
-	  color: #fff;
+	  color: #000;
 	}
   }
 
 
   .h1-asis {
-	color: #ffffff;
+	/* color: #ffffff; */
 	margin-bottom: 1em;
   }
+
+  .asistencia p {
+	color: #000000;
+  }
+
+  .cc {
+	color: #000 !important;
+}
+
 
 
 
@@ -1658,6 +1667,10 @@ a:hover.back-to-top {
   @media (max-width: 767px) {
 	body {
 		text-align: center;
+	}
+
+	.name, .artist {
+		text-align: left;
 	}
 
 	.divAsis {
